@@ -1,0 +1,253 @@
+/* Body and Background */
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    background-image: url("images/Background2.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+  
+body.explore-page {
+    background-image: url("images/explorebackground.jpg");
+}
+
+body.about-page {
+    background-image: url("images/aboutbackground.jpg");
+}
+
+
+/* Navigation Bar */
+nav {
+    background-image: url("images/header.jpg");
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: transparent;
+}
+
+/* Hero Section */
+.hero {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button, .artist-link {
+    background-color: #00ccff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .artist-link:hover {
+    background-color: #0099cc;
+}
+
+/* Grid Sections */
+.trending, .featured-artists {
+    padding: 20px;
+    text-align: center;
+}
+
+.album-grid, .artist-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    min-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.album-card, .artist-card {
+    flex: 0 0 auto;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.album-card:hover, .artist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.album-card img, .artist-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.album-card h3, .artist-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.album-card p, .artist-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Audio Controls */
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.play-button, .pause-button {
+    background-color: #00ccff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover, .pause-button:hover {
+    background-color: #0099cc;
+}
+
+/* Stats Section */
+.stats-container {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.stat-card {
+    display: inline-block;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    break-inside: avoid;
+    color: white;
+}
+
+.stat-card h3 {
+    color: #ffcc00;
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+}
+
+.stat-card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.stat-card th {
+    background: #00ccff;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.stat-card td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.stat-card tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Headers */
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
